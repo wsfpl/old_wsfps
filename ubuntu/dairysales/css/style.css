@@ -1,0 +1,180 @@
+html, body{height: 100%;}
+body{font-size: 14px; letter-spacing: 1px; font-weight: 400; color:#000; white-space: normal;}
+.loginBodyBg{ background: url(../images/loginBg.jpg) no-repeat left bottom fixed; -webkit-background-size: cover;
+  -moz-background-size: cover; -o-background-size: cover; background-size: cover;}
+.bodyBg{ background: url(../images/bg.jpg) repeat-x left bottom fixed; padding-top: 90px;}
+a, a:hover, a:focus{text-decoration: none;}
+/* login form start */
+.loginPage{margin-top: 5%;}
+.loginPage .logo{margin-top: 10%;}
+.loginPage .logo img{width: 180px;}
+.loginForm{ padding:15px 20px; margin-bottom:20px;}
+.loginForm h1{background: #E31837; padding: 15px 0; font-size: 26px; font-weight:normal; text-align: center;color: #fff; margin: 0;}
+.loginForm .form{padding:15px 10px; background:rgba(255,255,255,0.6);}
+.loginForm .form .form-control{color: #555; padding: 8px 20px; border-radius:0;height:40px}
+.loginForm button{background: #167361; border-radius:0; width: 100%; padding: 10px; border: none; color: #fff; border-radius:5px;}
+.triangle{width: 0; border-top: 12x solid transparent; border-right: 12px solid transparent; border-bottom: 12px solid #E31837;
+    border-left: 12px solid transparent; margin: 0 auto;}
+
+::-webkit-input-placeholder { /* Edge */
+  color: #999 !important;
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  color: #999 !important;
+}
+
+::placeholder {
+  color: #999 !important;
+} 
+
+.loginForm .alert{display: none; padding: 5px 10px; margin-bottom: 15px;}
+/* login form end */
+
+/* loader start */
+.loader, .ie8 .loader{display:none; position: fixed; left: 0; right: 0; top: 0; bottom: 0; background: rgba(255,255,255,0.9); z-index: 1111;}
+.ie8 .loader{background: #fff;}
+.loader img{position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; width:40px;}
+/* loader end */
+
+/* header start */
+.header{border-bottom: 1px solid #7a7475; padding: 10px 0;
+background-color: #1b263ce3;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5e5e5+0,ffffff+50,e5e5e5+100 */
+/* background: rgb(229,229,229); Old browsers
+IE9 SVG, needs conditional override of 'filter' to 'none'
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U1ZTVlNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNWU1ZTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  rgba(229,229,229,1) 0%, rgba(255,255,255,1) 50%, rgba(229,229,229,1) 100%); FF3.6+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(229,229,229,1)), color-stop(50%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); Chrome,Safari4+
+background: -webkit-linear-gradient(top,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 50%,rgba(229,229,229,1) 100%); Chrome10+,Safari5.1+
+background: -o-linear-gradient(top,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 50%,rgba(229,229,229,1) 100%); Opera 11.10+
+background: -ms-linear-gradient(top,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 50%,rgba(229,229,229,1) 100%); IE10+
+background: linear-gradient(to bottom,  rgba(229,229,229,1) 0%,rgba(255,255,255,1) 50%,rgba(229,229,229,1) 100%); W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-8 */
+
+}
+.header .logo a{display: inline-block;}
+.header .logo a img{width: 250px;}
+.header .LoginTxt a{background: #000; color: #fff; padding: 3px 10px; font-size:13px; border-radius:5px; display: inline-block;}
+.header .LoginTxt h5{color: #e31936; margin-top: 5px; margin-bottom: 0;}
+.header .LoginTxt h5 span{font-weight: bold;}
+/* header end */
+
+/* gradiant bg start */
+.ulDiv li, .gradiantBg{
+	background: rgb(232,235,235); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U4ZWJlYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkMWQ1ZDkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  rgba(232,235,235,1) 0%, rgba(209,213,217,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(232,235,235,1)), color-stop(100%,rgba(209,213,217,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(232,235,235,1) 0%,rgba(209,213,217,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(232,235,235,1) 0%,rgba(209,213,217,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(232,235,235,1) 0%,rgba(209,213,217,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(232,235,235,1) 0%,rgba(209,213,217,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8ebeb', endColorstr='#d1d5d9',GradientType=0 ); /* IE6-8 */
+}
+
+/* gradiant bg end */
+
+/* main ul start */
+.ulDiv ul{padding-left: 0; list-style-type: none;}
+.ulDiv li{display:block; margin-bottom:15px;border:2px solid #628b84; border-radius:5px; 
+}
+.ulDiv li a{display:block; background: url(../images/rightArow.png) no-repeat center right 10px;  padding: 5px 55px 5px 10px;  color:#000;font-size: 22px;}
+.ulDiv li a span{float: right; padding-top: 10px; font-size: 14px;}
+.ulDiv li a img{margin-right: 15px;}
+.mybilling .ulDiv li a span{float: none;}
+ul#billing li a{background: none; padding-right: 10px;}
+.confirmorderul li a span{display: block;float: none;}
+/* main ul end */
+
+/* main content start */
+.mainCont{background: rgba(255,255,255,0.4); border: 1px solid #1f6c5e; border-radius:5px; border-top-left-radius:0; padding:20px 10px 10px; position: relative; min-height: 300px; top: 50px; margin-bottom: 20px;}
+.mainCont h2{margin-top: 0; position: absolute; top: -45px; left:-1px; padding: 10px; background: rgba(255,255,255,0.4); font-size: 20px; font-weight:bold; border: 1px solid #1f6c5e; border-top-left-radius:5px;border-top-right-radius:5px; color: #0f6051; }
+.mainCont h2 img{margin-right: 10px; width: 22px;}
+.mainCont .form-horizontal .control-label{font-weight: normal; color:#0f6051; padding-top:6px;  font-size: 16px;}
+.mainCont .form-horizontal .form-control{border-color: #0f6051;}
+.mainCont .form-horizontal button{margin: 0 5px; border-radius:5px;}
+.bckbtn{position: absolute;right: 15px;}
+.bckbtn button{border-radius:5px;}
+.bckbtn1{position: absolute;right: 15px;}
+.bckbtn1 button{border-radius:5px;}
+.padTopRem{ padding-top: 0;}
+.mainCont .form-horizontal label span{padding-top: 6px; display: inline-block;}
+/* main content end */
+
+/* order request and myCredit start */
+.orderRequest, .myCredit{ color: #175a05;}
+.orderRequest .gradiantBg, .myCredit .gradiantBg, .myBilling .gradiantBg{ padding: 15px; border: 1px solid #628b84; border-radius:5px;}
+.orderRequest h3,.myCredit h3{margin-top: 0; font-size: 18px;}
+.orderRequest table{font-size: 14px;}
+.orderRequest .table-bordered, 
+.orderRequest .table-bordered > thead > tr > th, 
+.orderRequest .table-bordered tbody td,
+.pendingOrderModal .table-bordered, 
+.pendingOrderModal .table-bordered > thead > tr > th, 
+.pendingOrderModal .table-bordered tbody td,
+.pendingUpdate .table-bordered, 
+.pendingUpdate .table-bordered > thead > tr > th, 
+.pendingUpdate .table-bordered tbody td
+{border: 1px solid #628b84; text-align: center; padding:2px 3px;}
+.myCredit .num, .myCredit .mat, .myCredit .qty, .confirmorderul .num, .confirmorderul .mat, .confirmorderul .qty{display: block; color:#175a05; font-weight: normal; margin-bottom: 5px;}
+/* .mybilling .num, .mybilling .mat, .mybilling .qty{display: inline;} */
+.myCredit .num, .confirmorderul .num{font-size: 20px;}
+.myCredit .mat{font-size: 18px;}
+.myCredit .qty{font-size: 16px;}
+.mybilling .qty, .confirmorderul .qty{font-weight: bold; font-size: 22px;}
+.mybilling .mat, .confirmorderul .mat{font-size: 14px;}
+.pendingorder button{ background: #167361; color: #fff; border:1px solid #0b5143;}
+.pendingUpdate input{width: 120px; display: inline;}
+.viewOrderDiv{display: none;}
+/* order request and myCredit end */
+
+/* button design start */
+.btn-green{background: #167361; color: #fff; padding: 8px 15px; border: 1px solid #0b5143;}
+.btn-del, .btn-save{background: #E31837; border: none; color: #fff; padding: 7px 9px 5px; }
+.btn-save{background:#167361; }
+/* button design end */
+
+/* common css start */
+.normalTxt{font-weight: normal;}
+.boldTxt{font-weight: bold;}
+/* common css end  */
+
+/* responsive start */
+/* @media (max-width:867px){ */
+@media (max-width:767px){
+/* .header .logo a img{width: 120px;} */	
+.mainCont .form-horizontal .control-label{text-align: right;}
+/* resp table start */
+}
+@media (max-width:600px){
+.mainCont .form-horizontal .control-label{font-size: 14px; font-weight: bold;}
+/* .respTable table, .respTable thead, .respTable tbody, .respTable th, .respTable td,  
+.respTable tr { display: block;} */
+/* Hide table headers (but not display: none;, for accessibility) */
+/* .respTable table thead tr {position: absolute; top: -9999px; left: -9999px; }
+.respTable table tr { border: 1px solid #ccc; } */
+/* Behave  like a "row" */ 
+/* Now like a table header */
+/* .respTable table td {padding: 5px; text-align: left;} */
+/* .respTable table td:before {position: static; display: block; font-weight:bold; white-space: normal; width:auto;content: attr(data-title); padding: 5px;} */
+/* Label the data */
+/* .respTable table td:before {  } */
+/* resp table end */
+
+}
+@media (max-width:500px){
+.header .LoginTxt a{padding: 2px 8px;font-size: 12px;}
+.header .logo a img{width: 120px;}
+.ulDiv li a{font-size: 18px; background: url(../images/rightArow2.png) no-repeat center right 10px; padding-right: 40px;}
+.ulDiv li a img{width: 30px;}
+.mainCont h2{font-size: 20px; top: -44px;}
+.mainCont h2 img{width: 18px;}
+.mainCont .form-horizontal .control-label{font-size: 12px;}
+.orderRequest h3, .myCredit h3{font-size: 14px;}
+.orderRequest table{font-size: 12px;}
+}
+
+/* responsive end */
+

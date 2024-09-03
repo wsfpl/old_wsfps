@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+   xmlns:context="http://www.springframework.org/schema/context"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:mvc="http://www.springframework.org/schema/mvc"
+   xmlns:tx="http://www.springframework.org/schema/tx"	
+   xsi:schemaLocation="http://www.springframework.org/schema/beans     
+   http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+   http://www.springframework.org/schema/context 
+   http://www.springframework.org/schema/context/spring-context-4.0.xsd
+   http://www.springframework.org/schema/mvc
+   http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+   http://www.springframework.org/schema/tx 
+   http://www.springframework.org/schema/tx/spring-tx.xsd">
+   
+   <context:component-scan base-package="com.mahindra.dairy.*" />
+   <mvc:annotation-driven />
+   
+  <mvc:resources mapping="/**" location="/" />
+
+
+<bean class="org.springframework.web.servlet.view.XmlViewResolver">
+	  <property name="location">
+		         <value>/WEB-INF/views.xml</value>
+	  </property>
+	  <property name="order" value="0" />
+</bean>
+
+   <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+      <property name="prefix" value="/WEB-INF/views/" />
+      <property name="suffix" value=".jsp" />
+      <property name="order" value="1" />
+   </bean> 
+   
+	<!-- hibernate section starts -->
+   
+    <bean id="appemf" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+	<property name="dataSource" ref="dataSource" />
+	<property name="packagesToScan" value="com.mahindra.dairy.model" />
+	<property name="jpaVendorAdapter">
+		<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter" />
+	</property>
+	<property name="jpaProperties">
+		<props>
+			<prop key="hibernate.show_sql">true</prop>
+			<prop key="hibernate.hbm2ddl.auto">update</prop>
+			<prop key="connection_pool_size">20</prop>
+			<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop><!-- 
+			<prop key="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</prop> -->
+			<prop key="hibernate.enable_lazy_load_no_trans">true</prop>
+			<prop key="hibernate.jdbc.batch_size" >1000</prop>
+			<prop key="order_inserts">true</prop>
+		</props>
+	</property>
+   </bean>
+    
+   <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+           
+      <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+      <property name="url" value="jdbc:mysql://ls-bfd09f3f4dcb69736f87853c99818e6ef01ad11b.c9wqedbgghdx.ap-south-1.rds.amazonaws.com:3306/dairy"/>
+      <property name="username" value="agrisales" />
+    <!--   <property name="password" value="root"/> -->
+      <property name="password" value="123#Mahindra"/> 
+     
+      <!--  SERVER DETAILS-->
+   <!--  <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+           <property name="url" value="jdbc:mysql://agridealerdb01.mysql.database.azure.com:3306/dairy" />
+           <property name="username" value="dbadmin@agridealerdb01" />
+           <property name="password" value="bG}nmn*fsze2GbFL"/>
+            -->
+   </bean> 
+   
+   <!--  SERVER DETAILS-->
+      <!-- <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+      <property name="url" value="jdbc:mysql://agridealerdb01.mysql.database.azure.com:3306/dairy" />
+      <property name="username" value="dbadmin@agridealerdb01" />
+      <property name="password" value="bG}nmn*fsze2GbFL"/>  -->
+   
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+      <property name="entityManagerFactory" ref="appemf" />
+   </bean>
+   <tx:annotation-driven /> 
+   <!-- hibernate section ends -->
+ 
+
+ <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+   	<property name="maxUploadSize" value="100000000" />
+   </bean>
+</beans>
+
+

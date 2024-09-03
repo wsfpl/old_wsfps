@@ -1,0 +1,502 @@
+*
+{
+     margin: 0;
+     padding: 0
+}
+@font-face{
+    font-family:notosans;
+    src:url('../fonts/NotoSans-Regular.ttf');
+}
+@font-face{
+    font-family:opensans;
+    src:url('../fonts/OpenSans-Regular.ttf');
+}
+@font-face{
+    font-family:mukta;
+    src:url('../fonts/Mukta-Medium.ttf');
+}
+
+.o-details-card{
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+.o-left-detail {
+    display: table-cell;
+    margin-right: 15px;
+    width: 25%;
+    border-right: 1px solid #67839a;
+    padding:0 5px;
+    background: #67839a;
+    background: #335463;
+    color: #fff;
+    text-align:center;
+}
+.o-right-detail {
+    display: table-cell;
+    padding: 15px 5px;
+}
+.textleft{
+    text-align: left;
+}
+.o-display-table{
+    display: table;
+    width:100%;
+}
+.o-display-wrapper {
+    display: block;
+}
+.o-order-panel {
+    padding: 0 25px 0 35px;
+}
+.design-overview {
+    position: absolute;
+    top: 0;
+    left: -22px;
+}
+.o-order-header {
+    position: relative;
+}
+.upper-circle {
+    width: 11px;
+    height: 11px;
+    position: relative;
+    border: 2px solid #587b85;
+    border-radius: 25px;
+}
+.lower-circle {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border: 2px solid #587b85;
+    border-radius: 25px;
+    bottom: 2px;
+    left: -22px;
+}
+.o-order-header .textleft p:first-child {
+    border-bottom: 1px dashed #d5d5d6;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+ }
+
+.o-order-header .textleft p {
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 0.2px;
+    color: #335463;
+    font-family: opensans;
+}
+.inr-h4 {
+    font-size: 15px;
+    word-break: break-word;
+    margin-bottom: 0;
+}
+.vertical-bar::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 35px;
+    top: 11px;
+    left: 4px;
+    border-left: 2px dotted #587b85;
+}
+.value-span {
+    padding-left: 9px;
+}
+.o-all-details-header {
+    background: #335463;
+    color: #fff;
+    padding: 15px 15px;
+    text-align: center;
+}
+.open-details .o-menubar {
+    width: 22px;
+    height: 2px;
+    background: #d8dfe5;
+    margin-bottom: 4px;
+}
+.open-details {
+    float: left;
+    position: relative;
+    top: 3px;
+}
+.i-btn {
+    padding: 0;
+    background: transparent;
+}
+.i-btn .fa {
+    color: #41b95b;
+    font-size: 19px;
+    border-radius: 50%;
+}
+.o-product-filtering [class*='col-'] {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.o-all-details-header h5 {
+    margin: 0;
+    font-family: roboto;
+    font-size: 17px;
+    display: inline-block;
+}
+.h5-date-right{
+    font-size: 15px !important;
+    line-height: 23px;
+}
+.o-product-panel {
+    padding: 20px 0 0px 0;
+    border-bottom: 1px dotted #7a8b99;
+}
+.o-product-info {
+    float: right;
+}
+.o-product-name {
+    font-family: roboto;
+    color: #303435;
+    font-size: 16px;
+}
+.q-form-group input[type="text"]{width:150px;border-color: #7a8b99;}
+.q-form-group label{font-family: poppinsmedium;padding-right: 5px;border-radius: 2px;font-size: 16px;}
+.q-form-group {
+    padding-bottom: 15px;
+    padding-top: 2px;
+}
+.br-divide{
+    border-bottom: 1px dotted #7a8b99;
+}
+.q-form-group input#quantity::placeholder {
+    color: #7e7f7f;
+    font-size: 14px;
+    font-family: poppinsmedium;
+}
+.qrest-form-group label {
+    font-family: poppinsmedium;
+    color: #7c7d7d;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: .4px;
+}
+.br-q-divide {
+    border-bottom: 1px dashed #cdd3d9;
+}
+.qrest-form-group {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form-group.qrest-form-group .fa-inr {
+    color: #335463;
+    padding-right: 5px;
+    font-size: 18px;
+    vertical-align: bottom;
+}
+
+.form-group.qrest-form-group p {
+    font-size: 16px;
+    font-family: poppinsmedium;
+}
+.btn-action-panel{margin: 10px 0}
+.o-all-details-header .all-check-right-space {
+    margin-right: 10px;
+}
+.o-all-details{
+    display: none;
+}
+.form-inline {
+    padding-top: 10px;
+}
+.o-footer p {
+    text-align: center;
+    font-family: poppinsmedium;  
+    margin-bottom: 0;
+}
+.o-span-footer-txt {
+    display: block;
+    color: #fff;
+}
+.o-footertot-panel{
+    padding: 10px 0;
+    border-bottom: 1px dotted #588498;
+}
+.o-footer{
+    text-align: left;
+    padding: 0;
+    overflow: auto;
+    margin-top: 10px;
+}
+.commonn-btn.btn.approve-btn {
+    background: #41b95b;
+    color: white;
+    border: 1px solid #13882d;
+}
+.commonn-btn.btn.reject-btn {
+    background: #d64c4c;
+    color: #ffffff;
+    border: 1px solid #b42e2e;
+}
+.o-span-footer-val .fa {
+    padding-right: 5px;
+    font-size: 18px;
+}
+.o-span-footer-val {
+    font-size: 16px;
+    margin-top: 5px;
+    display: block;
+}
+.o-product-panel:last-child {
+    border-bottom: unset;
+}
+.o-form-filtering .form-group-mb-10{
+    margin-bottom: 10px;
+    display: block;
+    position: relative
+}
+.form-group-mb-10 .from-grp-lbl {
+    color: #fff;
+    font-family: poppinsmedium;
+    width: 100%;
+    display: block;
+    font-weight: normal;
+}
+.form-group-mb-10 [class*='col-'] {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.o-form-filtering .form-group-mb-10 .form-control{
+    width: 100%; 
+    background: #49768c;
+    border: 1px solid #fff;
+    color: #fff;
+    box-shadow: unset;
+    border-radius: 0;
+    height: 37px;
+}
+.o-form-filtering [class*='col-'] {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.cal-parent{
+    position: relative;
+}
+.calender-icon .fa{
+    color:#fff
+}
+.calender-icon{
+    position: absolute;
+    top:5px;
+    right:10px;
+}
+
+.approve-orders-bg .o-left-detail{
+    background: #41bb41;
+}
+.approve-orders-bg .vertical-bar::after{
+    border-left: 2px dotted #41bb41; 
+}
+.approve-orders-bg .lower-circle,.approve-orders-bg .upper-circle{
+   border: 2px solid #41bb41;
+}
+.reject-orders-bg .o-left-detail{
+   background: #f51a39; 
+}
+.reject-orders-bg .vertical-bar::after{
+    border-left: 2px dotted #f51a39; 
+}
+.reject-orders-bg .lower-circle,.reject-orders-bg .upper-circle{
+   border: 2px solid #f51a39;
+}
+.partialapporve-orders-bg .o-left-detail{
+   background:#ffbd18; 
+}
+.partialapporve-orders-bg .vertical-bar::after{
+    border-left:2px dotted #ffbd18;
+}
+.partialapporve-orders-bg .lower-circle,.partialapporve-orders-bg .upper-circle{
+   border: 2px solid #ffbd18;
+}
+.status-bar{
+  margin-left: 8px;  
+}
+.approve-status-bar .status-bar{
+    border-left: 3px solid #41bb41;
+}
+.reject-status-bar .status-bar{
+    border-left: 3px solid #f51a39;
+}
+.partialapprove-status-bar .status-bar{
+    border-left: 3px solid #ffbd18;
+}
+.o-all-details-header i.fa {
+    color: #fff;
+}
+.orderandbilling-forminline .q-form-group {
+    padding-bottom: 5px;
+}
+p.form-control .fa {
+    padding-right: 7px;
+    font-size: 19px;
+    vertical-align: middle;
+}
+p.form-control {
+    border: unset;
+    box-shadow: unset;
+    font-size: 18px;
+    font-family: poppinsmedium;
+    margin-bottom: 0;
+    position: relative;
+    top: -3px;
+}
+.all-appr-span {
+    font-family: poppinsregular;
+    border: 1px solid #a0a2b1;
+    padding: 0 5px;
+    color: #8c8fa1;
+    font-size: 15px;
+    border-radius: 4px;
+    background: #ebecef;
+}
+.div-bar {
+    color: #9fa1b0;
+    font-family: poppinsregukar;
+}
+.form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+.form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+.form-inline label {
+    font-weight: normal !important;
+    color: #7c7d7d;
+}
+.o-form-filtering {
+    margin-bottom: 10px;
+}
+.approve-reject-box{
+	display:inline-block
+}
+/*.hiddenlargedevice {
+    height: 380px;
+    overflow: auto;
+    height: calc(100vh - 200px);
+}*/
+/*responsive*/
+@media only screen and (max-width:359px){
+	.o-order-panel {
+  		 padding: 0 9px 0 32px;
+	}
+	.o-order-header .textleft p {
+		font-size: 14px;
+	}
+	
+}
+
+@media only screen and (max-width:639px){
+  .o-all-detail-body .o-product-title{
+      max-height: calc(100vh - 300px);
+      overflow: auto;  
+    }  
+    .o-form-filtering .col-xs-4{
+        width:100%;
+    }
+    .o-form-filtering .col-xs-6.xs-w-50{
+        width:50%;
+    }
+    .o-form-filtering .col-xs-8.xs-w-100{
+        width:100%;
+    }
+    .orderbilling-parent .o-table-wrapper{
+        padding-top: 0;
+    }
+    .orderandbilling-forminline{
+        padding-top: 0;
+    }
+    .common-inner-padding{
+    	padding-top: 0;
+    }
+    .btn-view-apre {
+    	font-size: 13px;
+    	padding: 8px 16px;
+	}
+    
+}
+@media only screen and (max-width:765px){
+    .o-orderdetails-cls{
+        background: #c5c4c4;
+        background: #49768c;
+    }
+    .o-orderdetails-cls .order-top-detail {
+        background: #e0dede;
+        border:1px solid #f1f0f0 
+    }
+    .o-table-wrapper{
+        background: transparent;
+        border: unset;
+    }
+    .o-orderdetails-cls .order-top-detail p{
+        font-family: poppinsmedium;
+        color: rgb(8 8 8);
+    }
+    .order-top-detail .dealer-p span{
+        color: #111213;
+        background: #d0cece;
+        text-align:left;
+    }
+    .order-top-detail .order-top-detail {
+        background: #e7eef0;
+        border-bottom: 1px solid #e7eef0;
+    }
+    .p-xs-0{
+    	padding:0;
+    }
+    .calender-icon {
+    	top: 10px;
+    }
+    .view-box .text-center{
+		text-align:left;
+	}
+	.view-box .text-center .approve-reject-box{
+		float: none !important;
+        display: inline-block;
+        margin-bottom: 0;
+	}
+	 .btn-view-apre {
+    	font-size: 13px;
+    	padding: 7px 14px;
+	}
+	
+}
+@media only screen and (min-width:640px) and (max-width:765px){
+   .o-orderdetails-cls .common-inner-padding{
+        width: 550px;
+        margin: auto;
+  } 
+  .o-product-title{
+        max-height: calc(100vh - 100px);
+        overflow: auto;
+    }
+}
+@media only screen and (min-width:766px){
+	.form-group-mb-10 .from-grp-lbl {
+	    font-size: 14px;
+	    color: #5d4d4d;
+    }
+    .o-form-filtering .form-group-mb-10 .form-control {
+	    border-radius: 2px;
+	    background: #f9f9f9;
+	    border: 1px solid #ced4da;
+	    color: #211c1c;
+	    height: 30px;
+	    padding: 0 8px;
+	    font-size: 13px !important;
+    }
+    .calender-icon .fa {
+    	color: #a9adb1;
+	}
+}
